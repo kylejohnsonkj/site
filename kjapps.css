@@ -36,8 +36,8 @@ body {
     background-color: white;
     overflow: hidden;
     z-index: 3;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .topnav a {
