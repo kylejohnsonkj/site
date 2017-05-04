@@ -455,8 +455,8 @@ input, select, textarea, button{font-family:inherit;}
     }
     
     #about_content img {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
     }
     
     #contact_content input[type="text"] {
