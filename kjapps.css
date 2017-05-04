@@ -450,7 +450,7 @@ input, select, textarea, button{font-family:inherit;}
     }
     
     #header, .content {
-        width: calc(100% - 55px);
+        width: calc(100% - 60px);
     }
     
     .content {
@@ -459,7 +459,7 @@ input, select, textarea, button{font-family:inherit;}
   
     #apps_content a {
         font-size: 15px;
-        margin-left: -5px;
+        margin-left: -15px;
     }
   
     #resume_content a {
