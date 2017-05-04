@@ -453,6 +453,10 @@ input, select, textarea, button{font-family:inherit;}
     .content {
         font-size: 16px;
     }
+  
+    a {
+        font-size: 14px;
+    }
     
     #about_content img {
         width: 150px;
