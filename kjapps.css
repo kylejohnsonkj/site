@@ -252,8 +252,8 @@ em {
     width: 100%;
     margin: 0;
     padding: 0;
-    margin-left: -5px;
-    margin-right: 5px;
+    margin-left: -3px;
+    margin-right: -3px;
 }
 
 .comments a {
