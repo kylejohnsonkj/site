@@ -240,11 +240,6 @@ em {
     width: 100%;
 }
 
-#resume_download {
-    margin: 0 auto;
-    text-align: center;
-}
-
 
 /* Blog */
 
@@ -461,6 +456,10 @@ input, select, textarea, button{font-family:inherit;}
     #apps_content a {
         font-size: 15px;
         margin-left: -5px;
+    }
+  
+    #resume_content a {
+        font-size: 15px;
     }
     
     #about_content img {
