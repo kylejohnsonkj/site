@@ -112,15 +112,15 @@ function responsiveNavBar() {
     var current = getCurrentFileName();
     var a = "", b = "", c = "", d = "", e = "";
     
-    if (current === "index.html") {
+    if (current === "index.html" || current === "index" || current === "/") {
         a = "current";
-    } else if (current === "apps.html") {
+    } else if (current === "apps.html" || current === "apps") {
         b = "current";
-    } else if (current === "resume.html") {
+    } else if (current === "resume.html" || current === "resume") {
         c = "current";
-    } else if (current === "blog.html") {
+    } else if (current === "blog.html" || current === "blog") {
         d = "current";
-    } else if (current === "contact.html") {
+    } else if (current === "contact.html" || current === "contact") {
         e = "current";
     } else {
 	a = "current";
@@ -137,7 +137,7 @@ function responsiveNavBar() {
         $(".topnav").css("border-bottom-width", "2px");
         $(window).scrollTop(0);
         
-        $(".topnav").html("<a href=\"/\" id=\"logo\">kylejohnson<\/a><a href=\"\" id=\"blank\"><\/a><a href=\"/\" id=\"" + a + "\">about me<\/a><a href=\"apps.html\" id=\"" + b + "\">my apps<\/a><a href=\"resume.html\" id=\"" + c + "\">resume<\/a><a href=\"blog.html\" id=\"" + d + "\">blog<\/a><a href=\"contact.html\" id=\"" + e + "\">contact<\/a><a href=\"javascript:void(0);\" id=\"icon\" onclick=\"responsiveNavBar()\">&#9776;<\/a>");
+        $(".topnav").html("<a href=\"/\" id=\"logo\">kylejohnson<\/a><a href=\"\" id=\"blank\"><\/a><a href=\"/\" id=\"" + a + "\">about me<\/a><a href=\"apps\" id=\"" + b + "\">my apps<\/a><a href=\"resume\" id=\"" + c + "\">resume<\/a><a href=\"blog\" id=\"" + d + "\">blog<\/a><a href=\"contact\" id=\"" + e + "\">contact<\/a><a href=\"javascript:void(0);\" id=\"icon\" onclick=\"responsiveNavBar()\">&#9776;<\/a>");
         
     } else {
         x.className = "topnav";
@@ -149,7 +149,7 @@ function responsiveNavBar() {
         $(".topnav").css("border-bottom-style", "none");
         $(".topnav").css("border-bottom-width", "0px");
         
-        $(".topnav").html("<a href=\"/\" id=\"logo\">kylejohnson<\/a><a href=\"javascript:void(0);\" id=\"icon\" onclick=\"responsiveNavBar()\">&#9776;<\/a><a href=\"contact.html\" id=\"" + e + "\">contact<\/a><a href=\"blog.html\" id=\"" + d + "\">blog<\/a><a href=\"resume.html\" id=\"" + c + "\">resume<\/a><a href=\"apps.html\" id=\"" + b + "\">my apps<\/a><a href=\"/\" id=\"" + a + "\">about me<\/a>");
+        $(".topnav").html("<a href=\"/\" id=\"logo\">kylejohnson<\/a><a href=\"javascript:void(0);\" id=\"icon\" onclick=\"responsiveNavBar()\">&#9776;<\/a><a href=\"contact\" id=\"" + e + "\">contact<\/a><a href=\"blog\" id=\"" + d + "\">blog<\/a><a href=\"resume\" id=\"" + c + "\">resume<\/a><a href=\"apps\" id=\"" + b + "\">my apps<\/a><a href=\"/\" id=\"" + a + "\">about me<\/a>");
     }
     
     ajaxRedirect();
