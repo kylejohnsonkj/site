@@ -292,6 +292,9 @@ em {
     color: rgb(255, 145, 64);
     font-weight: normal;
     font-size: 23px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
 }
 
 #blog_content h4 {
@@ -299,6 +302,9 @@ em {
     font-size: 17px;
     font-weight: normal;
     color: rgb(81, 174, 255);
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
 }
 
 
