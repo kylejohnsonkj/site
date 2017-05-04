@@ -80,6 +80,7 @@ function ajaxRedirect(event) {
         
         var from = getCurrentFileName();
         var to = this.href.substring(this.href.lastIndexOf("/") + 1);
+	alert(to);
         event.preventDefault();
         
         $("#header").hide(1000);
