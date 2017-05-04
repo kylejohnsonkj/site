@@ -111,6 +111,7 @@ body {
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    visibility: hidden;
 }
 
 
@@ -129,6 +130,7 @@ body {
     font-family: "Futura";
     color: black;
     padding: 20px;
+    visibility: hidden;
 }
 
 .content p {
