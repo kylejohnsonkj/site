@@ -450,7 +450,7 @@ input, select, textarea, button{font-family:inherit;}
     }
     
     #header, .content {
-        width: 85%;
+        width: calc(100% - 60px);
     }
     
     .content {
