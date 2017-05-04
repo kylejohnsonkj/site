@@ -109,16 +109,18 @@ function responsiveNavBar() {
     var current = getCurrentFileName();
     var a = "", b = "", c = "", d = "", e = "";
     
-    if (current === "/") {
+    if (current === "index.html") {
         a = "current";
     } else if (current === "apps.html") {
-        b = "current"
+        b = "current";
     } else if (current === "resume.html") {
-        c = "current"
+        c = "current";
     } else if (current === "blog.html") {
-        d = "current"
+        d = "current";
     } else if (current === "contact.html") {
-        e = "current"
+        e = "current";
+    } else {
+	a = "current";
     }
     
     if (x.className === "topnav") {
