@@ -190,6 +190,7 @@ em {
     border-collapse: collapse;
     display: inline-block;
     vertical-align: middle;
+    margin-left: -5px;
 }
 
 #apps_content .desc {
