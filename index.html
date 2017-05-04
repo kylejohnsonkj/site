@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kylejohnson | about me</title>
+        
+        <link rel="stylesheet" type="text/css" href="kjapps.css">
+        
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="keywords" content="kyle,johnson,kylejohnson,about,apps,resume,blog,contact"/>
+        <meta name="description" content="Hello! My name is Kyle Johnson and this is my website."/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="kjapps.js"></script>
+    </head>
+    
+    <body>
+        
+        <div id="fullContainer" onclick="closeVideo()">
+            
+            <div id="container">
+
+                <!-- Navigation bar (split w/ logo on left, links on right) -->
+                <div class="topnav" id="navbar">
+                    <a href="index.html" id="logo">kylejohnson</a>
+                    <a href="javascript:void(0);" id="icon" onclick="responsiveNavBar()">&#9776;</a>
+                    <a href="contact.html">contact</a>
+                    <a href="blog.html">blog</a>
+                    <a href="resume.html">resume</a>
+                    <a href="apps.html">my apps</a>
+                    <a href="index.html" id="current">about me</a>
+                </div>
+
+                <!-- Header title above content -->
+                <div id="header">
+                    about me
+                </div>
+
+                <!-- Area for page content -->
+                <div class="content" id="about_content">
+
+                    <img src="images/me.png" alt="Me" height="200" width="200">
+
+                    <div id="welcome">Hello!</div>
+                    <br>
+                    My name is Kyle Johnson and this is my website. <br>
+                    <br>
+                    I am a sophomore at the University of Wisconsin-Eau Claire majoring in Computer Science (emphasis in Software Engineering). Currently I am spending my time outside of class learning Swift to develop iOS apps for the iTunes App Store. <br>
+                    <br>
+                    Feel free to browse around. On this site you will find everything about me ranging from all my current apps, to my resume, blog, and contact page. <br>
+                    <em>(It's also mobile-friendly!)</em> <br>
+                    <br>
+                    Thanks! <br>
+                    Kyle <br>
+
+                </div>
+
+                <!-- Adds extra space under content div -->
+                <div id="extra"></div>
+            </div>
+
+            <!-- Site footer w/ copyright -->
+            <div id="footer">
+                &#9400; 2017 Kyle Johnson. All rights reserved.
+            </div>
+            
+        </div>
+        
+        <div id="videoContainer">
+        </div>
+        
+    </body>
+</html>

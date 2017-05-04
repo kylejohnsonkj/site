@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kylejohnson | contact</title>
+        
+        <link rel="stylesheet" type="text/css" href="kjapps.css">
+        
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="keywords" content="kyle,johnson,kylejohnson,about,apps,resume,blog,contact"/>
+        <meta name="description" content="Hello! My name is Kyle Johnson and this is my website."/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="kjapps.js"></script>
+    </head>
+    
+    <body>
+    
+        <div id="fullContainer" onclick="closeVideo()">
+            
+            <div id="container">
+
+                <!-- Navigation bar (split w/ logo on left, links on right) -->
+                <div class="topnav" id="navbar">
+                    <a href="index.html" id="logo">kylejohnson</a>
+                    <a href="javascript:void(0);" id="icon" onclick="responsiveNavBar()">&#9776;</a>
+                    <a href="contact.html" id="current">contact</a>
+                    <a href="blog.html">blog</a>
+                    <a href="resume.html">resume</a>
+                    <a href="apps.html">my apps</a>
+                    <a href="index.html">about me</a>
+                </div>
+
+                <!-- Header title above content -->
+                <div id="header">
+                    contact
+                </div>
+
+                <!-- Area for page content -->
+                <div class="content" id="contact_content">
+
+                    For any app feedback or personal questions, contact me here. <br>
+                    <br>
+
+                    <div style="display:none; color: rgb(81, 174, 255);" id="thankyou_message">
+                        Your message has been delivered.
+                    </div>
+
+                    <!-- validateForm() currently not working w/ AJAX -->
+                    <form id="gform" method="post" onsubmit="return validateForm()" action="https://script.google.com/macros/s/AKfycbyrcqSm5KuUpjdGdLG7AqDB333ZlX5eqqPGiL3pP32LL5IEzyK1/exec">
+                        <input type="text" name="name" placeholder="your name" id="name"><br>
+                        <br>
+                        <input type="text" name="email" placeholder="email" id="email"><br>
+                        <br>
+                        <textarea name="message" placeholder="message here" rows="10" cols="50" id="message"></textarea><br>
+                        <input type="submit" value="Send">
+                    </form>
+
+                </div>
+
+                <!-- Adds extra space under content div -->
+                <div id="extra"></div>
+
+            </div>
+
+            <!-- Site footer w/ copyright -->
+            <div id="footer">
+                &#9400; 2017 Kyle Johnson. All rights reserved.
+            </div>
+            
+        </div>
+        
+        <div id="videoContainer">
+        </div>
+        
+        <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+        
+    </body>
+</html>

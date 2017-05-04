@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kylejohnson | my apps</title>
+        
+        <link rel="stylesheet" type="text/css" href="kjapps.css">
+        
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="keywords" content="kyle,johnson,kylejohnson,about,apps,resume,blog,contact"/>
+        <meta name="description" content="Hello! My name is Kyle Johnson and this is my website."/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="kjapps.js"></script>
+    </head>
+    
+    <body>
+        
+        <div id="fullContainer" onclick="closeVideo()">
+            
+            <div id="container">
+                <!-- Navigation bar (split w/ logo on left, links on right) -->
+                <div class="topnav" id="navbar">
+                    <a href="index.html" id="logo">kylejohnson</a>
+                    <a href="javascript:void(0);" id="icon" onclick="responsiveNavBar()">&#9776;</a>
+                    <a href="contact.html">contact</a>
+                    <a href="blog.html">blog</a>
+                    <a href="resume.html">resume</a>
+                    <a href="apps.html" id="current">my apps</a>
+                    <a href="index.html">about me</a>
+                </div>
+
+                <!-- Header title above content -->
+                <div id="header">
+                    my apps
+                </div>
+
+                <!-- Area for page content -->
+                <div class="content" id="apps_content">
+
+                    Check out my apps! You can download them on the iOS App Store. <br>
+                    <div id="small"><hr id="grey_break"></div>
+
+                    <table cellpadding="10">
+                        <tr>
+                            <td id="icon"><img src="images/redirect.png" alt="redirect" height="120" width="120"></td>
+                            <td class="appinfo">
+                                redirect <br>
+                                <div id="info">released 2/7/17</div>
+                                <div id="info">(Games)</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="space"></td>
+                            <td class="linkinfo"><a target='_blank' href="https://itunes.apple.com/us/app/redirect/id1202748337?mt=8">View on App Store</a></td>
+                        </tr>
+                    </table>
+                    <table cellpadding="10" class="desc">
+                        <tr>
+                            <td>Redirect the ball into the target, but it's harder than you think... Collect coins to purchase paddles. Unlock achievements. Rise on the leaderboards. Can you make it to 100?</td>
+                        </tr>
+                    </table>
+                    <hr id="grey_break">
+
+                    <table cellpadding="10">
+                        <tr>
+                            <td id="icon"><img src="images/shift_timer.png" alt="Shift Timer" height="120" width="120"></td>
+                            <td class="appinfo">
+                                Shift Timer <br>
+                                <div id="info">released 8/16/16</div>
+                                <div id="info">(Utilities)</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="space"></td>
+                            <td class="linkinfo"><a target='_blank' href="https://itunes.apple.com/us/app/shift-timer-track-your-job-progress-throughout-the-work-day/id1145055011?mt=8">View on App Store</a></td>
+                        </tr>
+                    </table>
+                    <table cellpadding="10" class="desc">
+                        <tr>
+                            <td>Shift Timer allows you to enter your shift hours and get a live-updating view of your progress throughout the day. See what percentage of work you've completed and how many hours, minutes and seconds you have left to go.</td>
+                        </tr>
+                    </table>
+
+                    <hr id="grey_break">
+
+                    <table cellpadding="10">
+                        <tr>
+                            <td id="icon"><img src="images/wwdc.png" alt="WWDC" height="120" width="120"></td>
+                            <td class="appinfo">
+                                WWDC '17 Submission <br>
+                                <div id="info">accepted 4/21/17</div>
+                                <div id="info">(Swift Playground)</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="space"></td>
+                            <td class="linkinfo">
+                                <a target='_blank' href="https://www.youtube.com/watch?v=lHKf4klk0-I" id='video'>Demo on YouTube</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellpadding="10" class="desc">
+                        <tr>
+                            <td>It's March Madness in a Swift Playground! Built in Swift 3 using SpriteKit, this playground experiment takes a fun approach on the classic arcade basketball shooter in just over 400 lines of code.</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <!-- Adds extra space under content div -->
+                <div id="extra"></div>
+
+            </div>
+
+            <!-- Site footer w/ copyright -->
+            <div id="footer">
+                &#9400; 2017 Kyle Johnson. All rights reserved.
+            </div>
+        </div>
+        
+        <div id="videoContainer">
+        </div>
+        
+    </body>
+</html>

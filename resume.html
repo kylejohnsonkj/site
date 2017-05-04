@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kylejohnson | resume</title>
+        
+        <link rel="stylesheet" type="text/css" href="kjapps.css">
+        
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="keywords" content="kyle,johnson,kylejohnson,about,apps,resume,blog,contact"/>
+        <meta name="description" content="Hello! My name is Kyle Johnson and this is my website."/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="kjapps.js"></script>
+    </head>
+    
+    <body>
+        
+        <div id="fullContainer" onclick="closeVideo()">
+            
+            <div id="container">
+
+                <!-- Navigation bar (split w/ logo on left, links on right) -->
+                <div class="topnav" id="navbar">
+                    <a href="index.html" id="logo">kylejohnson</a>
+                    <a href="javascript:void(0);" id="icon" onclick="responsiveNavBar()">&#9776;</a>
+                    <a href="contact.html">contact</a>
+                    <a href="blog.html">blog</a>
+                    <a href="resume.html" id="current">resume</a>
+                    <a href="apps.html">my apps</a>
+                    <a href="index.html">about me</a>
+                </div>
+
+                <!-- Header title above content -->
+                <div id="header" style="max-width:800px">
+                    resume
+                </div>
+
+                <!-- Area for page content -->
+                <div class="content" id="resume_content">
+                    <img src="images/resume.png" alt="resume">
+                    <br> <br>
+                    <div class="linkinfo" id="resume_download">
+                        <a target='_blank' href="https://www.dropbox.com/s/ni52bau315jglv9/Resume.pdf?dl=1">Download PDF</a>
+                    </div>
+                </div>
+
+                <!-- Adds extra space under content div -->
+                <div id="extra"></div>
+
+            </div>
+
+            <!-- Site footer w/ copyright -->
+            <div id="footer">
+                &#9400; 2017 Kyle Johnson. All rights reserved.
+            </div>
+            
+        </div>
+        
+        <div id="videoContainer">
+        </div>
+        
+    </body>
+</html>
