@@ -438,7 +438,7 @@ input, select, textarea, button{font-family:inherit;}
     
     .topnav.responsive a#icon {
         position: absolute;
-        right: 15px;
+        right: 10px;
         top: 0;
     }
     
