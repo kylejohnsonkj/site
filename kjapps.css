@@ -425,9 +425,9 @@ input, select, textarea, button{font-family:inherit;}
 }
 
 
-/* Media Queries (breakpoint at 820px) */
+/* Media Queries */
 
-@media only screen and (max-device-width: 820px), only screen and (max-width: 820px) { 
+@media only screen and (max-device-width: 799px), only screen and (max-width: 799px) { 
     
     .topnav a:not(:first-child) {
         display: none;
