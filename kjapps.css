@@ -37,7 +37,7 @@ body {
     overflow: hidden;
     z-index: 3;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .topnav a {
