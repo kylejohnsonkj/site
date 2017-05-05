@@ -214,6 +214,7 @@ em {
     text-decoration: none;
     float: left;
     margin-top: -15px;
+    margin-left: -5px;
 }
 
 #apps_content a:hover {
