@@ -36,8 +36,8 @@ body {
     background-color: white;
     overflow: hidden;
     z-index: 3;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .topnav a {
@@ -45,8 +45,8 @@ body {
     display: block;
     color: black;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 24px;
     padding-bottom: 24px;
     text-decoration: none;
@@ -59,8 +59,8 @@ body {
     display: block;
     color: black;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 14px;
     padding-bottom: 14px;
     text-decoration: none;
