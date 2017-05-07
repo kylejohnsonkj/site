@@ -21,8 +21,7 @@ $(document).ready(function() {
         $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=2B4_P7LjOxE\" id='video'>Happy Saturday!</a>")
     }
 
-    
-    
+
     /* Page Transitions */
     
     $("#header").hide();
@@ -72,6 +71,9 @@ $(document).ready(function() {
     });
     
 })
+
+
+/* Fancy Page Redirects */
 
 function ajaxRedirect(event) {
     /* Page Transitions (continued) */
