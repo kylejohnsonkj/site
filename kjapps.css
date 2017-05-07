@@ -353,6 +353,7 @@ input, select, textarea, button{font-family:inherit;}
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    margin-bottom: 5px;
 }
 
 ::-webkit-input-placeholder {
