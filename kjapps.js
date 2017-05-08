@@ -185,5 +185,7 @@ function validateForm() {
         return false;
     }
     
+    $("input[type=submit]").hide();
+
     return true;
 }
