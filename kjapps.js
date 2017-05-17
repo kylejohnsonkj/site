@@ -1,6 +1,9 @@
 $(document).ready(function() {
     
-    /* Welcome Message */
+    /*
+        Welcome Message!
+        Links to funny Silicon Valley clip for each day of the week
+    */
     
     today = new Date();
     dayIndex = today.getDay();
@@ -76,15 +79,16 @@ $(document).ready(function() {
 /* Fancy Page Redirects */
 
 function ajaxRedirect(event) {
+
     /* Page Transitions (continued) */
     
     $(".topnav a").click(function(event) {
         
         var from = getCurrentFileName();
         var to = this.href.substring(this.href.lastIndexOf("/") + 1);
-	if (to === "") {
-	    to = "/";
-	}
+        if (to === "") {
+            to = "/";
+        }
         event.preventDefault();
         
         $("#header").hide(1000);
@@ -125,7 +129,7 @@ function responsiveNavBar() {
     } else if (current === "contact.html" || current === "contact") {
         e = "current";
     } else {
-	a = "current";
+	   a = "current";
     }
     
     if (x.className === "topnav") {
@@ -156,9 +160,6 @@ function responsiveNavBar() {
     
     ajaxRedirect();
 }
-
-
-/* Helper Method */
 
 function getCurrentFileName() {
     var pagePathName = window.location.pathname;

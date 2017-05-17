@@ -36,11 +36,12 @@
     
     <body>
 	    
+        <!-- Disable transitions if JavaScript is disabled -->
         <noscript>
     	    <style type="text/css">
                 #header, .content { visibility: visible; }
     	    </style>
-	</noscript>
+        </noscript>
 	    
         <div id="fullContainer" onclick="closeVideo()">
             
@@ -72,7 +73,7 @@
                         Your message has been delivered.
                     </div>
 
-                    <!-- validateForm() currently not working w/ AJAX -->
+                    <!-- Email form submission (via Google script) -->
                     <form id="gform" method="post" onsubmit="return validateForm()" action="https://script.google.com/macros/s/AKfycbyrcqSm5KuUpjdGdLG7AqDB333ZlX5eqqPGiL3pP32LL5IEzyK1/exec">
                         <input type="text" name="name" placeholder="your name" id="name"><br>
                         <br>
@@ -86,7 +87,6 @@
 
                 <!-- Adds extra space under content div -->
                 <div id="extra"></div>
-
             </div>
 
             <!-- Site footer w/ copyright -->

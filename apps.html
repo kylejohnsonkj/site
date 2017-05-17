@@ -36,15 +36,17 @@
     
     <body>
 	    
+        <!-- Disable transitions if JavaScript is disabled -->
         <noscript>
     	    <style type="text/css">
                 #header, .content { visibility: visible; }
     	    </style>
-	</noscript>
+        </noscript>
 	    
         <div id="fullContainer" onclick="closeVideo()">
             
             <div id="container">
+
                 <!-- Navigation bar (split w/ logo on left, links on right) -->
                 <div class="topnav" id="navbar">
                     <a href="/" id="logo">kylejohnson</a>
@@ -107,23 +109,20 @@
                             <td>Shift Timer allows you to enter your shift hours and get a live-updating view of your progress throughout the day. See what percentage of work you've completed and how many hours, minutes and seconds you have left to go.</td>
                         </tr>
                     </table>
-
                     <hr id="grey_break">
 
                     <table cellpadding="10">
                         <tr>
                             <td id="icon"><img src="images/wwdc.png" alt="WWDC" height="120" width="120"></td>
                             <td class="appinfo">
-                                WWDC '17 Submission <br>
+                                WWDC 2017 Submission <br>
                                 <div id="info">accepted 4/21/17</div>
                                 <div id="info">(Swift Playground)</div>
                             </td>
                         </tr>
                         <tr>
                             <td id="space"></td>
-                            <td class="linkinfo">
-                                <a target='_blank' href="https://www.youtube.com/watch?v=lHKf4klk0-I" id='video'>Demo on YouTube</a>
-                            </td>
+                            <td class="linkinfo"><a target='_blank' href="https://www.youtube.com/watch?v=lHKf4klk0-I" id='video'>Demo on YouTube</a></td>
                         </tr>
                     </table>
                     <table cellpadding="10" class="desc">
@@ -136,13 +135,13 @@
 
                 <!-- Adds extra space under content div -->
                 <div id="extra"></div>
-
             </div>
 
             <!-- Site footer w/ copyright -->
             <div id="footer">
                 &#9400; 2017 Kyle Johnson. All rights reserved.
             </div>
+
         </div>
         
         <div id="videoContainer">

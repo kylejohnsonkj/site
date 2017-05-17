@@ -316,7 +316,9 @@ em {
 
 /* Contact */
 
-input, select, textarea, button{font-family:inherit;}
+input, select, textarea, button {
+    font-family: inherit;
+}
 
 #contact_content input[type="text"] {
     padding: 10px;
