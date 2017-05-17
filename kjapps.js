@@ -6,19 +6,19 @@ $(document).ready(function() {
     dayIndex = today.getDay();
     
     if (dayIndex == 0) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=S2Cti12XBw4\" id='video'>Happy Sunday!</a>")
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=ZyBa3cYx6ZY\" id='video'>Happy Sunday!</a>")
     } else if (dayIndex == 1) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=U7k-_T-lxTk\" id='video'>Happy Monday!</a>")
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=Ra8San4epfY\" id='video'>Happy Monday!</a>")
     } else if (dayIndex == 2) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=avFq9errZCk\" id='video'>Happy Tuesday!</a>")
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=cpuexiPFgnY\" id='video'>Happy Tuesday!</a>")
     } else if (dayIndex == 3) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=7LtjzQaFZ3k\" id='video'>Happy Wednesday!</a>")
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=IJIAOosI6js\" id='video'>Happy Wednesday!</a>")
     } else if (dayIndex == 4) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=ZyBa3cYx6ZY\" id='video'>Happy Thursday!</a>")
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=LDQcgkDn0yU\" id='video'>Happy Thursday!</a>")
     } else if (dayIndex == 5) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=kfVsfOSbJY0\" id='video'>Happy Friday!</a>")
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=Ggjs3udnwiE\" id='video'>Happy Friday!</a>")
     } else if (dayIndex == 6) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=2B4_P7LjOxE\" id='video'>Happy Saturday!</a>")
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=tVq1wgIN62E\" id='video'>Happy Saturday!</a>")
     }
 
 
