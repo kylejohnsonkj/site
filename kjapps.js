@@ -9,19 +9,26 @@ $(document).ready(function() {
     dayIndex = today.getDay();
     
     if (dayIndex == 0) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=ZyBa3cYx6ZY\" id='video'>Happy Sunday!</a>")
+        // Happy Days theme - "Sunday, Monday, Happy Days!"
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=u6zl5x8r9Bs\" id='video'>Happy Sunday!</a>")
     } else if (dayIndex == 1) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=Ra8San4epfY\" id='video'>Happy Monday!</a>")
+        // Silicon Valley clip - "Groups of 5"
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=gKftzAbfcGU\" id='video'>Happy Monday!</a>")
     } else if (dayIndex == 2) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=cpuexiPFgnY\" id='video'>Happy Tuesday!</a>")
+        // Weird Al song - "White & Nerdy"
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=N9qYF9DZPdw\" id='video'>Happy Tuesday!</a>")
     } else if (dayIndex == 3) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=IJIAOosI6js\" id='video'>Happy Wednesday!</a>")
+        // Geico commercial - "Hump Day"
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=7LtjzQaFZ3k\" id='video'>Happy Wednesday!</a>")
     } else if (dayIndex == 4) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=LDQcgkDn0yU\" id='video'>Happy Thursday!</a>")
+        // "TURKEY DUBSTEP" video
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=WIv-qsH40m0\" id='video'>Happy Thursday!</a>")
     } else if (dayIndex == 5) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=Ggjs3udnwiE\" id='video'>Happy Friday!</a>")
+        // Rebecca Black terrible song - "Friday"
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=kfVsfOSbJY0\" id='video'>Happy Friday!</a>")
     } else if (dayIndex == 6) {
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=tVq1wgIN62E\" id='video'>Happy Saturday!</a>")
+        // SNL - "Sean Spicer Press Conference"
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=UWuc18xISwI\" id='video'>Happy Saturday!</a>")
     }
 
 
