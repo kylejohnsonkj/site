@@ -320,7 +320,8 @@ input, select, textarea, button {
     font-family: inherit;
 }
 
-#contact_content input[type="text"] {
+#contact_content input[type="text"],
+#contact_content input[type="email"] {
     padding: 10px;
     border: none;
     border-bottom: solid 2px #c9c9c9;
