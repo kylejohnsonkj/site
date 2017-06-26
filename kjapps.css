@@ -138,7 +138,6 @@ body {
     color: dimgrey;
 }
 
-
 /* Content Dividers */
 
 #small {
@@ -163,8 +162,13 @@ body {
 /* About Me */
 
 #about_content img {
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: white;
+    padding: 7px;
     float: right;
-    padding: 10px;
+    margin-left: 12px;
+    margin-bottom: 12px;
     align-content: center;
 }
 
