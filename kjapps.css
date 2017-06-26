@@ -242,11 +242,12 @@ em {
 }
 
 #resume_content img {
-    width: 100%;
+    width: calc(100% + 40px);
+    margin: -20px;
 }
 
 #resume_download {
-    margin-top: -6px;
+    margin-top: 12px;
     margin-bottom: 5px;
 }
 
