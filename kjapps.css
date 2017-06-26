@@ -503,6 +503,11 @@ input, select, textarea, button {
     em {
         font-size: 12px;
     }
+
+    #resume_download {
+        margin-top: 8px;
+        margin-bottom: -5px;
+    }
 }
 
 /* 1440 width breakpoint */
