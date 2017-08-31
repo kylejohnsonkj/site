@@ -186,6 +186,14 @@ em {
     color: grey;
 }
 
+#links img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-left: 16px;
+    top: -50px;
+}
+
 
 /* My Apps */
 
@@ -507,6 +515,11 @@ input, select, textarea, button {
     #resume_download {
         margin-top: 8px;
         margin-bottom: -3px;
+    }
+  
+    #links img {
+        width: 30px;
+        height: 30px;
     }
 }
 
