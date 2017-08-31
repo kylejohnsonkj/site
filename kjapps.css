@@ -191,7 +191,7 @@ em {
     height: 40px;
     position: relative;
     margin-left: 16px;
-    top: -50px;
+    top: -52px;
 }
 
 
@@ -520,6 +520,7 @@ input, select, textarea, button {
     #links img {
         width: 30px;
         height: 30px;
+        top: -42px;
     }
 }
 
