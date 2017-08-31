@@ -520,7 +520,9 @@ input, select, textarea, button {
     #links img {
         width: 30px;
         height: 30px;
-        top: -32px;
+        position: relative;
+        margin-left: 16px;
+        top: -42px;
     }
 }
 
