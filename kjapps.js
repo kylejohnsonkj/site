@@ -178,21 +178,10 @@ function getCurrentFileName() {
 
 function validateForm() {
     
-    if ($("#gform").find("#name").val().length == 0) {
-        alert("Please enter your name.");
+    if ($("#gform").find("#name").val().length == 0 || $("#gform").find("#email").val().length == 0 || $("#gform").find("#message").val().length == 0) {
+        alert("Please complete the form.");
         return false;
     }
-    
-    if ($("#gform").find("#email").val().length == 0) {
-        alert("Please enter your email address.");
-        return false;
-    }
-    
-    if ($("#gform").find("#message").val().length == 0) {
-        alert("Please enter a message.");
-        return false;
-    }
-    
     $("input[type=submit]").hide();
 
     return true;
