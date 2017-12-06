@@ -9,26 +9,26 @@ $(document).ready(function() {
     dayIndex = today.getDay();
     
     if (dayIndex == 0) {
-        // Happy Days theme - "Sunday, Monday, Happy Days!"
+        // Happy Days - "Theme"
         $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=u6zl5x8r9Bs\" id='video'>Happy Sunday!</a>")
     } else if (dayIndex == 1) {
-        // Silicon Valley clip - "Groups of 5"
+        // Silicon Valley - "Groups of 5"
         $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=gKftzAbfcGU\" id='video'>Happy Monday!</a>")
     } else if (dayIndex == 2) {
-        // Weird Al song - "White & Nerdy"
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=N9qYF9DZPdw\" id='video'>Happy Tuesday!</a>")
+        // Community - "La Biblioteca Spanish Rap"
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=j25tkxg5Vws\" id='video'>Happy Tuesday!</a>")
     } else if (dayIndex == 3) {
-        // Geico commercial - "Hump Day"
+        // Geico - "Hump Day"
         $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=7LtjzQaFZ3k\" id='video'>Happy Wednesday!</a>")
     } else if (dayIndex == 4) {
-        // "TURKEY DUBSTEP" video
+        // TURKEY DUBSTEP
         $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=WIv-qsH40m0\" id='video'>Happy Thursday!</a>")
     } else if (dayIndex == 5) {
-        // Rebecca Black terrible song - "Friday"
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=kfVsfOSbJY0\" id='video'>Happy Friday!</a>")
+        // Monkey Sees a Magic Trick
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=FIxYCDbRGJc\" id='video'>Happy Friday!</a>")
     } else if (dayIndex == 6) {
-        // SNL - "Sean Spicer Press Conference"
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=UWuc18xISwI\" id='video'>Happy Saturday!</a>")
+        // UP - "Kevin"
+        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=qeKrReq034U\" id='video'>Happy Saturday!</a>")
     }
 
 
