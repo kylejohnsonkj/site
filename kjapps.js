@@ -77,7 +77,7 @@ $(document).ready(function() {
     });
     
     $(".report").click(function() {
-       alert("You gotta be kidding me."); 
+       alert("Seriously?"); 
     });
     
 })
