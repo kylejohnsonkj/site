@@ -255,8 +255,7 @@ em {
 }
 
 #resume_download {
-    margin-top: -30px;
-    margin-bottom: 5px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -514,8 +513,7 @@ input, select, textarea, button {
     }
 
     #resume_download {
-        margin-top: -5px;
-        margin-bottom: 0px;
+        margin-bottom: -3px;
     }
   
     #links img {
