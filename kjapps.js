@@ -7,6 +7,10 @@ $(document).ready(function() {
     
     today = new Date();
     dayIndex = today.getDay();
+    year = today.getFullYear();
+
+    // load current year for footer
+    $("#footer").html("&#9400; " + year + " Kyle Johnson. All rights reserved.")
     
     if (dayIndex == 0) {
         // Happy Days - "Theme"
