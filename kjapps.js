@@ -1,53 +1,34 @@
 $(document).ready(function() {
-    
-    /*
-        Welcome Message!
-        Links to funny Silicon Valley clip for each day of the week
-    */
-    
-    today = new Date();
-    dayIndex = today.getDay();
-    year = today.getFullYear();
+    // get current day
+    var today = new Date();
+    var index = today.getDay();
+    var year = today.getFullYear();
 
-    // load current year for footer
+    // set welcome text with different video for each day of the week
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var urls = [
+        "https://www.youtube.com/watch?v=u6zl5x8r9Bs",
+        "https://www.youtube.com/watch?v=gKftzAbfcGU",
+        "https://www.youtube.com/watch?v=j25tkxg5Vws",
+        "https://www.youtube.com/watch?v=7LtjzQaFZ3k",
+        "https://www.youtube.com/watch?v=WIv-qsH40m0",
+        "https://www.youtube.com/watch?v=FIxYCDbRGJc",
+        "https://www.youtube.com/watch?v=qeKrReq034U"
+    ];
+    $("#welcome").html("<a target='_blank' href=\"" + urls[index] + "\" id='video'>Happy " + days[index] + "!</a>");
+
+    // put current year in footer text
     $("#footer").html("&#9400; " + year + " Kyle Johnson. All rights reserved.")
-    
-    if (dayIndex == 0) {
-        // Happy Days - "Theme"
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=u6zl5x8r9Bs\" id='video'>Happy Sunday!</a>")
-    } else if (dayIndex == 1) {
-        // Silicon Valley - "Groups of 5"
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=gKftzAbfcGU\" id='video'>Happy Monday!</a>")
-    } else if (dayIndex == 2) {
-        // Community - "La Biblioteca Spanish Rap"
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=j25tkxg5Vws\" id='video'>Happy Tuesday!</a>")
-    } else if (dayIndex == 3) {
-        // Geico - "Hump Day"
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=7LtjzQaFZ3k\" id='video'>Happy Wednesday!</a>")
-    } else if (dayIndex == 4) {
-        // TURKEY DUBSTEP
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=WIv-qsH40m0\" id='video'>Happy Thursday!</a>")
-    } else if (dayIndex == 5) {
-        // Monkey Sees a Magic Trick
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=FIxYCDbRGJc\" id='video'>Happy Friday!</a>")
-    } else if (dayIndex == 6) {
-        // UP - "Kevin"
-        $("#welcome").html("<a target='_blank' href=\"https://www.youtube.com/watch?v=qeKrReq034U\" id='video'>Happy Saturday!</a>")
-    }
-
 
     /* Page Transitions */
-    
     $("#header").hide();
     $(".content").hide();
     $("#header").css("visibility", "visible");
     $(".content").css("visibility", "visible");
     $("#header").show(1000);
     $(".content").show(1000);
-    
-    
+
     /* Play Embedded YouTube Video */
-    
     $("#video").click(function(event) {
         event.preventDefault();
         
@@ -62,10 +43,8 @@ $(document).ready(function() {
           $("#videoContainer").css("display", "inline");
 	   }
     });
-    
-    
+
     /* Hide Embedded YouTube Video */
-    
     $("#fullContainer").click(function() {
 	   if ($("#fullContainer").css('opacity') != 1) {
 		  $("#fullContainer").animate({opacity:1}, 1000);
@@ -76,31 +55,29 @@ $(document).ready(function() {
 
     ajaxRedirect();
     
+    // just my
     $(".comments").click(function() {
        alert("Haha, I don't read comments... Just use the contact tab!"); 
     });
     
+    // sense of humor
     $(".report").click(function() {
-       alert("Seriously?"); 
+       alert("Try me.");
     });
-    
 })
 
-
 /* Fancy Page Redirects */
-
 function ajaxRedirect(event) {
 
     /* Page Transitions (continued) */
-    
     $(".topnav a").click(function(event) {
+        event.preventDefault();
         
         var from = getCurrentFileName();
         var to = this.href.substring(this.href.lastIndexOf("/") + 1);
         if (to === "") {
             to = "/";
         }
-        event.preventDefault();
         
         $("#header").hide(1000);
         $(".content").hide(1000, function() {
@@ -120,11 +97,10 @@ function ajaxRedirect(event) {
     });
 }
 
-
 /* Responsive Navigation Bar */
-
 function responsiveNavBar() {
     
+    // dirty but it works
     var x = document.getElementById("navbar");
     var current = getCurrentFileName();
     var a = "", b = "", c = "", d = "", e = "";
@@ -172,21 +148,19 @@ function responsiveNavBar() {
     ajaxRedirect();
 }
 
-function getCurrentFileName() {
-    var pagePathName = window.location.pathname;
-    return pagePathName.substring(pagePathName.lastIndexOf("/") + 1);
-}
-
-
 /* Contact Form Validation */
-
 function validateForm() {
-    
-    if ($("#gform").find("#name").val().length == 0 || $("#gform").find("#email").val().length == 0 || $("#gform").find("#message").val().length == 0) {
+    if ($("#gform").find("#name").val().length == 0 ||
+        $("#gform").find("#email").val().length == 0 ||
+        $("#gform").find("#message").val().length == 0) {
         alert("Please complete the form.");
         return false;
     }
     $("input[type=submit]").hide();
-
     return true;
+}
+
+function getCurrentFileName() {
+    var pagePathName = window.location.pathname;
+    return pagePathName.substring(pagePathName.lastIndexOf("/") + 1);
 }
