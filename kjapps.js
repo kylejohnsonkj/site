@@ -62,7 +62,7 @@ $(document).ready(function() {
     
     // sense of humor
     $(".report").click(function() {
-       alert("Try me.");
+       alert("Nice try.");
     });
 })
 

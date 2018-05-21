@@ -1,9 +1,9 @@
 /* HTML */
 
 html {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 
@@ -20,10 +20,10 @@ body {
 /* Futura Font */
 
 @font-face {
-  font-family: "Futura";
-  src:
-    local("Futura"),
-    url(fonts/Futura-Medium.ttf) format("truetype");
+    font-family: "Futura";
+    src:
+        local("Futura"),
+        url(fonts/Futura-Medium.ttf) format("truetype");
 }
 
 
@@ -306,6 +306,11 @@ em {
     text-decoration: none;
     float: right;
     margin-right: -5px;
+}
+
+#blog_content #video {
+    color: rgb(81, 174, 255);
+    text-decoration: none;
 }
 
 #blog_content h3 {
