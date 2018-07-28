@@ -534,12 +534,17 @@ input, select, textarea, button {
     }
     
     #contact_content input[type="text"],
-    #contact_content input[type="email"],
-    #contact_content select {
+    #contact_content input[type="email"] {
         width: 90%;
         max-width: 200px;
     }
     
+    #contact_content select {
+        width: calc(90% + 20px);
+        max-width: 220px;
+        height: 50px;
+    }
+
     #contact_content textarea {
         width: calc(100% - 25px);
         max-width: 400px;
