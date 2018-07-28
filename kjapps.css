@@ -358,6 +358,9 @@ input, select, textarea, button {
     margin-left: 2px;
     margin-bottom: 30px;
     height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 8px;
 }
 
 #contact_content select:invalid {
