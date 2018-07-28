@@ -349,6 +349,21 @@ input, select, textarea, button {
     margin-left: 2px;
 }
 
+#contact_content select {
+    border: none;
+    background-color: white;
+    border-bottom: solid 2px #c9c9c9;
+    font-size: 16px;
+    width: 270px;
+    margin-left: 2px;
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+#contact_content select:invalid {
+  color: gray;
+}
+
 #contact_content textarea {
     padding: 10px;
     border: none;

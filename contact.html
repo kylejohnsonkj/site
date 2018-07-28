@@ -79,6 +79,13 @@
                         <br>
                         <input type="email" name="email" placeholder="email" id="email"><br>
                         <br>
+                        <select required type="app" name="app" id="app">
+                            <option value="">related app (optional)</option>
+                            <option value="Chain Five">Chain Five</option>
+                            <option value="redirect">redirect</option>
+                            <option value="Shift Timer">Shift Timer</option>
+                        </select>
+                        <br>
                         <textarea name="message" placeholder="message here" rows="10" cols="50" id="message"></textarea><br>
                         <input type="submit" value="Send">
                     </form>
@@ -99,7 +106,7 @@
         <div id="videoContainer">
         </div>
         
-        <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
         
     </body>
 </html>
