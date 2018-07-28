@@ -534,7 +534,8 @@ input, select, textarea, button {
     }
     
     #contact_content input[type="text"],
-    #contact_content input[type="email"] {
+    #contact_content input[type="email"],
+    #contact_content select {
         width: 90%;
         max-width: 200px;
     }
