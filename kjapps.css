@@ -265,11 +265,14 @@ em {
 #resume_content img {
     width: calc(100% + 40px);
     margin: -20px;
+    margin-bottom: -45px;
 }
 
-#resume_download {
-    margin-top: 8px;
-    text-align: left;
+#resume_download img {
+    width: 33px;
+    height: 33px;
+    margin-left: -2px;
+    float: left;
 }
 
 
