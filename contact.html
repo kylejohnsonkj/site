@@ -74,10 +74,10 @@
                     </div>
 
                     <!-- Email form submission (via Google script) -->
-                    <form id="gform" method="post" onsubmit="return validateForm()" action="https://script.google.com/macros/s/AKfycbyrcqSm5KuUpjdGdLG7AqDB333ZlX5eqqPGiL3pP32LL5IEzyK1/exec">
-                        <input type="text" name="name" placeholder="your name" id="name"><br>
+                    <form id="gform" method="post" onsubmit="return submitForm()" action="https://script.google.com/macros/s/AKfycbyrcqSm5KuUpjdGdLG7AqDB333ZlX5eqqPGiL3pP32LL5IEzyK1/exec">
+                        <input required type="text" name="name" placeholder="your name" id="name"><br>
                         <br>
-                        <input type="email" name="email" placeholder="email" id="email"><br>
+                        <input required type="email" name="email" placeholder="email" id="email"><br>
                         <br>
                         <select required type="app" name="app" id="app">
                             <option value="">choose related app...</option>
@@ -87,7 +87,7 @@
                             <option value="nil">(not app related)</option>
                         </select>
                         <br>
-                        <textarea name="message" placeholder="message here" rows="4" cols="50" id="message"></textarea><br>
+                        <textarea required name="message" placeholder="message here" rows="4" cols="50" id="message"></textarea><br>
                         <input type="submit" value="Send">
                     </form>
 

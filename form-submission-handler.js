@@ -1,14 +1,4 @@
 (function() {
-  function validateForm() {
-    if ($("#gform").find("#name").val().length == 0 ||
-        $("#gform").find("#email").val().length == 0 ||
-        $("#gform").find("#message").val().length == 0) {
-        return false;
-    }
-    $("input[type=submit]").hide();
-    return true;
-  }
-
   function validEmail(email) { // see:
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return re.test(email);
@@ -69,7 +59,7 @@
     event.preventDefault();           // we are submitting via xhr below
     var data = getFormData();         // get the values submitted in the form
 
-    if (validateHuman(data.honeypot) || !validateForm()) {  //if form is filled, form will not be submitted
+    if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
       return false;
     }
 

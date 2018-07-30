@@ -148,14 +148,7 @@ function responsiveNavBar() {
     ajaxRedirect();
 }
 
-/* Contact Form Validation */
-function validateForm() {
-    if ($("#gform").find("#name").val().length == 0 ||
-        $("#gform").find("#email").val().length == 0 ||
-        $("#gform").find("#message").val().length == 0) {
-        alert("Please complete the form.");
-        return false;
-    }
+function submitForm() {
     $("input[type=submit]").hide();
     return true;
 }
