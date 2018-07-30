@@ -459,8 +459,8 @@ input, select, textarea, button {
 #extra {
     margin: 0 auto;
     position: relative;
-    height: 100px;
-    top: 100px;
+    height: 80px;
+    top: 110px;
 }
 
 
