@@ -110,7 +110,7 @@ body {
 #header {
     margin: 0 auto;
     position: relative;
-    top: 95px;
+    top: 100px;
     left: 0;
     width: 65%;
     max-width: 1000px;
@@ -133,7 +133,7 @@ body {
 .content {
     margin: 0 auto;
     position: relative;
-    top: 110px;
+    top: 115px;
     left: 0;
     width: 65%;
     max-width: 1000px;
