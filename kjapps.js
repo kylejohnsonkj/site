@@ -7,13 +7,13 @@ $(document).ready(function() {
     // set welcome text with different video for each day of the week
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var urls = [
-        "https://www.youtube.com/watch?v=u6zl5x8r9Bs",
-        "https://www.youtube.com/watch?v=gKftzAbfcGU",
-        "https://www.youtube.com/watch?v=j25tkxg5Vws",
-        "https://www.youtube.com/watch?v=7LtjzQaFZ3k",
-        "https://www.youtube.com/watch?v=WIv-qsH40m0",
-        "https://www.youtube.com/watch?v=FIxYCDbRGJc",
-        "https://www.youtube.com/watch?v=qeKrReq034U"
+        "https://www.youtube.com/watch?v=t3O6vA0UL3k", // S: La La Land
+        "https://www.youtube.com/watch?v=gKftzAbfcGU", // M: Programmers
+        "https://www.youtube.com/watch?v=j25tkxg5Vws", // T: La Biblioteca
+        "https://www.youtube.com/watch?v=7LtjzQaFZ3k", // W: Hump Day
+        "https://www.youtube.com/watch?v=sXBAXyBC4C8", // Th: Foosball
+        "https://www.youtube.com/watch?v=SsoOG6ZeyUI", // F: Tabs vs Spaces
+        "https://www.youtube.com/watch?v=igz3LvsARSc" // Sa: Kevin from UP
     ];
     $("#welcome").html("<a target='_blank' href=\"" + urls[index] + "\" id='video'>Happy " + days[index] + "!</a>");
 
