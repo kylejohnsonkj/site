@@ -7,13 +7,13 @@ $(document).ready(function() {
     // set welcome text with different video for each day of the week
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var urls = [
-        "https://www.youtube.com/watch?v=t3O6vA0UL3k", // S: La La Land
-        "https://www.youtube.com/watch?v=gKftzAbfcGU", // M: Programmers
-        "https://www.youtube.com/watch?v=j25tkxg5Vws", // T: La Biblioteca
-        "https://www.youtube.com/watch?v=7LtjzQaFZ3k", // W: Hump Day
-        "https://www.youtube.com/watch?v=sXBAXyBC4C8", // Th: Foosball
-        "https://www.youtube.com/watch?v=SsoOG6ZeyUI", // F: Tabs vs Spaces
-        "https://www.youtube.com/watch?v=igz3LvsARSc" // Sa: Kevin from UP
+        "https://www.youtube.com/watch?v=LTTlczKbTYA", // Sun: National Treasure
+        "https://www.youtube.com/watch?v=gKftzAbfcGU", // Mon: Programmers
+        "https://www.youtube.com/watch?v=j25tkxg5Vws", // Tue: La Biblioteca
+        "https://www.youtube.com/watch?v=7LtjzQaFZ3k", // Wed: Hump Day
+        "https://www.youtube.com/watch?v=sXBAXyBC4C8", // Thu: Foosball
+        "https://www.youtube.com/watch?v=SsoOG6ZeyUI", // Fri: Tabs vs Spaces
+        "https://www.youtube.com/watch?v=igz3LvsARSc"  // Sat: Up - Kevin
     ];
     $("#welcome").html("<a target='_blank' href=\"" + urls[index] + "\" id='video'>Happy " + days[index] + "!</a>");
 

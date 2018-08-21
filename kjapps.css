@@ -190,7 +190,16 @@ body {
     text-decoration: none;
 }
 
+#about_content a#alt_link {
+    color: grey;
+    text-decoration: none;
+}
+
 #about_content a:hover {
+    text-decoration: underline;
+}
+
+#about_content a#alt_link:hover {
     text-decoration: underline;
 }
 
