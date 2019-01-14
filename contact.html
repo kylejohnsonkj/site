@@ -75,6 +75,7 @@
 
                     <!-- Email form submission (via Google script) -->
                     <form id="gform" method="post" onsubmit="return submitForm()" action="https://script.google.com/macros/s/AKfycbyrcqSm5KuUpjdGdLG7AqDB333ZlX5eqqPGiL3pP32LL5IEzyK1/exec">
+                        <input type="text" id="honeypot" name="honeypot" style="display:none">
                         <input required type="text" name="name" placeholder="your name" id="name"><br>
                         <br>
                         <input required type="email" name="email" placeholder="email" id="email"><br>
