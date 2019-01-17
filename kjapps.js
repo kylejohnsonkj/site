@@ -154,16 +154,18 @@ function isRobot() {
       console.log("Robot Detected!");
       return true;
     } else {
-      console.log("Welcome Human!");
+      console.log("Go Ahead, Human!");
+      $('div#honeypot_container').hide();
+      return false;
     }
-  }
+}
 
 function submitForm() {
-    if (isRobot()) {  // if form is filled, form will not be submitted
-        return false;
-    } else {
+    if (isRobot() == false) {  // if form is filled, form will not be submitted
         $("input[type=submit]").hide();
         return true;
+    } else {
+        return false;
     }
 }
 

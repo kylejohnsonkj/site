@@ -86,9 +86,11 @@
                         </select>
                         <br>
                         <textarea required name="message" placeholder="message here" rows="4" cols="50" id="message"></textarea><br>
-                        <div id="honeypot_text">Leave the following field blank to submit. <div style="color:red">[spambot prevention]</div></div>
-                        <input type="text" id="honeypot" name="honeypot" value=""><br>
-                        <br>
+                        <div id="honeypot_container">
+                            <div id="honeypot_text">[spambot prevention]</div>
+                            <input type="text" id="honeypot" name="honeypot" value="DELETE TEXT IF HUMAN" oninput="return isRobot()"><br>
+                            <br>
+                        </div>
                         <input type="submit" value="Send">
                     </form>
 
