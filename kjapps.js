@@ -148,9 +148,23 @@ function responsiveNavBar() {
     ajaxRedirect();
 }
 
+function isRobot() {
+    var honeypot = $('input#honeypot').val();
+    if (honeypot) {
+      console.log("Robot Detected!");
+      return true;
+    } else {
+      console.log("Welcome Human!");
+    }
+  }
+
 function submitForm() {
-    $("input[type=submit]").hide();
-    return true;
+    if (isRobot()) {  // if form is filled, form will not be submitted
+        return false;
+    } else {
+        $("input[type=submit]").hide();
+        return true;
+    }
 }
 
 function getCurrentFileName() {

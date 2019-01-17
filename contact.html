@@ -69,13 +69,10 @@
                     For any app feedback or personal questions, contact me here. <br>
                     <br>
 
-                    <div style="display:none; color: rgb(81, 174, 255);" id="thankyou_message">
-                        Your message has been delivered.
-                    </div>
+                    <div id="thankyou_message">Your message has been delivered.</div>
 
                     <!-- Email form submission (via Google script) -->
                     <form id="gform" method="post" onsubmit="return submitForm()" action="https://script.google.com/macros/s/AKfycbyrcqSm5KuUpjdGdLG7AqDB333ZlX5eqqPGiL3pP32LL5IEzyK1/exec">
-                        <input type="text" id="honeypot" name="honeypot" style="display:none">
                         <input required type="text" name="name" placeholder="your name" id="name"><br>
                         <br>
                         <input required type="email" name="email" placeholder="email" id="email"><br>
@@ -89,6 +86,9 @@
                         </select>
                         <br>
                         <textarea required name="message" placeholder="message here" rows="4" cols="50" id="message"></textarea><br>
+                        <div id="honeypot_text">Leave the following field blank to submit. <div style="color:red">[spambot prevention]</div></div>
+                        <input type="text" id="honeypot" name="honeypot" value=""><br>
+                        <br>
                         <input type="submit" value="Send">
                     </form>
 

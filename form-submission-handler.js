@@ -1,11 +1,7 @@
 (function() {
-  function validEmail(email) { // see:
-    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-    return re.test(email);
-  }
-
-  function validateHuman(honeypot) {
-    if (honeypot) {  //if hidden form filled up
+  function isRobot() {
+    var honeypot = $('input#honeypot').val();
+    if (honeypot) {
       console.log("Robot Detected!");
       return true;
     } else {
@@ -59,40 +55,34 @@
     event.preventDefault();           // we are submitting via xhr below
     var data = getFormData();         // get the values submitted in the form
 
-    if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
-      return false;
+    if (isRobot()) {  // if form is filled, form will not be submitted
+        return false;
     }
 
-    if( data.email && !validEmail(data.email) ) {   // if email is not valid show error
-      var invalidEmail = document.getElementById("email-invalid");
-      if (invalidEmail) {
-        invalidEmail.style.display = "block";
-        return false;
+    disableAllButtons(event.target);
+    var url = event.target.action;  //
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    // xhr.withCredentials = true;
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+      console.log( xhr.status, xhr.statusText )
+      console.log(xhr.responseText);
+      document.getElementById("gform").style.display = "none"; // hide form
+      var thankYouMessage = document.getElementById("thankyou_message");
+      if (thankYouMessage) {
+        thankYouMessage.style.display = "block";
       }
-    } else {
-      disableAllButtons(event.target);
-      var url = event.target.action;  //
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', url);
-      // xhr.withCredentials = true;
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      xhr.onreadystatechange = function() {
-          console.log( xhr.status, xhr.statusText )
-          console.log(xhr.responseText);
-          document.getElementById("gform").style.display = "none"; // hide form
-          var thankYouMessage = document.getElementById("thankyou_message");
-          if (thankYouMessage) {
-            thankYouMessage.style.display = "block";
-          }
-          return;
-      };
-      // url encode form data for sending as post data
-      var encoded = Object.keys(data).map(function(k) {
-          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
-      }).join('&')
-      xhr.send(encoded);
-    }
+      return;
+    };
+
+    // url encode form data for sending as post data
+    var encoded = Object.keys(data).map(function(k) {
+      return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
+    }).join('&')
+    xhr.send(encoded);
   }
+
   function loaded() {
     console.log("Contact form submission handler loaded successfully.");
     // bind to the submit event of our form

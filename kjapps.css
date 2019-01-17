@@ -420,6 +420,17 @@ input, select, textarea, button {
     -moz-appearance: none;
     appearance: none;
     margin-bottom: 5px;
+    margin-top: -1px;
+}
+
+#thankyou_message {
+    display: none;
+    color: rgb(81, 174, 255);
+}
+
+#honeypot_text {
+    font-size: 13px;
+    margin-bottom: 8px;
 }
 
 ::-webkit-input-placeholder {
