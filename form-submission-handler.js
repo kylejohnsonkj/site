@@ -65,10 +65,9 @@
     }
 
     disableAllButtons(event.target);
-    var url = event.target.action;  //
+    var url = "https://script.google.com/macros/s/AKfycbyrcqSm5KuUpjdGdLG7AqDB333ZlX5eqqPGiL3pP32LL5IEzyK1/exec"
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
-    // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
       console.log( xhr.status, xhr.statusText )
