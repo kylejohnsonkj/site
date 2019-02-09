@@ -70,6 +70,7 @@
                     <br>
 
                     <div id="thankyou_message">Your message has been delivered.</div>
+                    <div id="honeypot_message">Your message has been blocked. Sorry, robot!</div>
 
                     <!-- Email form submission (via Google script) -->
                     <form id="gform" method="post" onsubmit="return submitForm()" action="https://script.google.com/macros/s/AKfycbyrcqSm5KuUpjdGdLG7AqDB333ZlX5eqqPGiL3pP32LL5IEzyK1/exec">
@@ -86,11 +87,7 @@
                         </select>
                         <br>
                         <textarea required name="message" placeholder="message here" rows="4" cols="50" id="message"></textarea><br>
-                        <div id="honeypot_container">
-                            <div id="honeypot_text">[spambot prevention]</div>
-                            <input type="text" id="honeypot" name="honeypot" value="DELETE TEXT IF HUMAN" oninput="return isRobot()"><br>
-                            <br>
-                        </div>
+                        <input type="text" id="honeypot" name="honeypot" value="robot" style="display:none">
                         <input type="submit" value="Send">
                     </form>
 

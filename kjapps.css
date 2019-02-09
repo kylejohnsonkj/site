@@ -427,9 +427,8 @@ input, select, textarea, button {
     color: rgb(81, 174, 255);
 }
 
-#honeypot_text {
-    font-size: 16px;
-    margin-bottom: 3px;
+#honeypot_message {
+    display: none;
     color: red;
 }
 

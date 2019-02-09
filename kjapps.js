@@ -148,25 +148,10 @@ function responsiveNavBar() {
     ajaxRedirect();
 }
 
-function isRobot() {
-    var honeypot = $('input#honeypot').val();
-    if (honeypot) {
-      console.log("Robot Detected!");
-      return true;
-    } else {
-      console.log("Go Ahead, Human!");
-      $('div#honeypot_container').hide();
-      return false;
-    }
-}
-
 function submitForm() {
-    if (isRobot() == false) {  // if form is filled, form will not be submitted
-        $("input[type=submit]").hide();
-        return true;
-    } else {
-        return false;
-    }
+    document.getElementById("honeypot").value = "human";    // spam protection
+    $("input[type=submit]").hide();
+    return true;
 }
 
 function getCurrentFileName() {

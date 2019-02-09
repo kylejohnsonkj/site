@@ -1,11 +1,11 @@
 (function() {
   function isRobot() {
-    var honeypot = $('input#honeypot').val();
-    if (honeypot) {
+    var honeypot = document.getElementById("honeypot").value;
+    if (honeypot == "human") {
+      console.log("Welcome Human!");
+    } else {
       console.log("Robot Detected!");
       return true;
-    } else {
-      console.log("Welcome Human!");
     }
   }
 
@@ -56,6 +56,11 @@
     var data = getFormData();         // get the values submitted in the form
 
     if (isRobot()) {  // if form is filled, form will not be submitted
+        document.getElementById("gform").style.display = "none"; // hide form
+        var honeypotMessage = document.getElementById("honeypot_message");
+        if (honeypotMessage) {
+          honeypotMessage.style.display = "block";
+        }
         return false;
     }
 
