@@ -356,6 +356,82 @@ em {
     margin-bottom: 10px;
 }
 
+/* Interests */
+
+#interests_sidebar {
+    float: right;
+}
+
+.interests_item {
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: white;
+    padding: 7px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    align-content: center;
+}
+
+.interests_item#squareimg {
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: white;
+    padding: 7px;
+    margin-top: 5px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    align-content: center;
+    line-height: 0;
+}
+
+#interests_content h3 {
+    color: rgb(255, 145, 64);
+    font-weight: normal;
+    font-size: 23px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#interests_content h4 {
+    color: black;
+    font-size: 17px;
+    font-weight: normal;
+    color: rgb(81, 174, 255);
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#interests_content table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+#interests_content tr:hover {
+    background-color: #f5f5f5;
+}
+
+#interests_content tr#table_header {
+    background-color: rgba(150, 150, 150, 0.25);
+}
+
+#interests_content a {
+    color: rgb(81, 174, 255);
+    text-decoration: none;
+}
+
+#interests_content a#alt {
+    color: rgb(255, 145, 64);
+    text-decoration: none;
+}
+
+#interests_content a:hover {
+    text-decoration: underline;
+}
+
+#interests_content a#alt:hover {
+    text-decoration: underline;
+}
 
 /* Contact */
 
@@ -587,6 +663,39 @@ input, select, textarea, button {
         position: relative;
         margin-left: 16px;
         top: -42px;
+    }
+
+    #interests_sidebar {
+        float: right;
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    .interests_item {
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        background: white;
+        padding: 7px;
+        margin-left: 0px;
+        margin-bottom: 12px;
+        align-content: center;
+        width: calc(100% - 14px);
+    }
+
+    .interests_item#squareimg {
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        background: white;
+        padding: 7px;
+        margin-left: 0px;
+        margin-bottom: 12px;
+        align-content: center;
+        width: calc(100% - 14px);
+    }
+
+    #interests_content img.feature {
+        width: 100%;
+        height: 100%;
     }
 }
 
