@@ -511,6 +511,11 @@ input, select, textarea, button {
 
 @media only screen and (max-device-width: 820px), only screen and (max-width: 820px) { 
     
+    body {
+        background-color: lightgray;
+        background: none;
+    }
+
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -639,13 +644,5 @@ input, select, textarea, button {
 @media only screen and (max-width: 1279px) {
     #apps_content .desc {
         width: 100%;
-    }
-}
-
-/* 820px width breakpoint */
-@media only screen and (max-width: 820px) {
-    body {
-        background-color: lightgray !important;
-        background: none;
     }
 }
