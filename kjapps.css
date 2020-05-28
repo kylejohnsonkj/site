@@ -711,4 +711,9 @@ input, select, textarea, button {
     #apps_content .desc {
         width: 100%;
     }
+    
+    body {
+        background-color: lightgray !important;
+        background: none;
+    }
 }
