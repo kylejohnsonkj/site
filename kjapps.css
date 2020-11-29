@@ -296,7 +296,7 @@ em {
     -moz-border-radius: 6px;
     background: white;
     padding: 7px;
-    margin-left: 12px;
+    margin-left: 24px;
     margin-bottom: 12px;
     align-content: center;
 }
@@ -307,7 +307,7 @@ em {
     background: white;
     padding: 7px;
     margin-top: 5px;
-    margin-left: 12px;
+    margin-left: 24px;
     margin-bottom: 12px;
     align-content: center;
     line-height: 0;
@@ -644,5 +644,57 @@ input, select, textarea, button {
 @media only screen and (max-width: 1279px) {
     #apps_content .desc {
         width: 100%;
+    }
+}
+
+/* Adaptive Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+    }
+    .topnav {
+        background-color: rgb(24, 26, 27);
+    }
+    .topnav #logo {
+        color: white;
+    }
+    .topnav a {
+        color: white;
+    }
+    .topnav a:hover, .topnav #current {
+        background-color: rgb(34, 36, 38);
+    }
+    #header {
+        background-color: rgb(24, 26, 27);
+        color: rgb(232, 230, 227);
+    }
+    .content:not(#resume_content) {
+        background-color: rgba(24, 26, 27, 0.6);
+        color: rgb(220, 220, 220);
+    }
+    #about_content img, .interests_item#squareimg {
+        background: #444;
+    }
+    #about_content a#alt_link, em {
+        color: rgb(152, 143, 129);
+    }
+    .interests_item {
+        background: rgb(24, 26, 27);
+    }
+    .linkinfo a {
+        background-color: rgb(24, 26, 27);
+    }
+    #github {
+        content: url("images/github_dark.png")
+    }
+    #footer {
+        background-color: rgb(24, 26, 27);
+    }
+    input, textarea, #contact_content select {
+        background-color: #181a1b;
+        color: rgb(220, 220, 220);
+    }
+    #contact_content input[type="submit"] {
+        filter: brightness(0.9);
     }
 }
