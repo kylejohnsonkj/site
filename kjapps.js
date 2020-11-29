@@ -9,7 +9,7 @@ $(document).ready(function() {
     $("#welcome").html("Happy " + days[index] + "! 🎉");
 
     // put current year in footer text
-    $("#footer").html("&#9400; " + year + " Kyle Johnson. All rights reserved.")
+    $("#footer").html($("#footer").html().replace("####", year));
 
     /* Page Transitions */
     $("#header").hide();
@@ -45,17 +45,29 @@ $(document).ready(function() {
     });
 
     ajaxRedirect();
-    
-    // just my
-    $(".comments").click(function() {
-       alert("Haha, I don't read comments... Just use the contact tab!"); 
+
+    // adaptive dark mode
+    toggleDarkMode();
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        toggleDarkMode();
     });
-    
-    // sense of humor
-    $(".report").click(function() {
-       alert("Nice try.");
+
+    // manual dark mode override
+    $("#dark_switch").click(function() {
+        document.getElementById("darkmode").disabled = !document.getElementById("darkmode").disabled
+        $("#dark_switch").attr("src", document.getElementById("darkmode").disabled ? "images/moon.png" : "images/sun.png")
     });
 })
+
+function isDarkModeEnabled() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+}
+
+function toggleDarkMode() {
+    document.getElementById("darkmode").disabled = !isDarkModeEnabled();
+    $("#dark_switch").prop("checked", isDarkModeEnabled());
+    $("#dark_switch").attr("src", isDarkModeEnabled() ? "images/sun.png" : "images/moon.png")
+}
 
 /* Fancy Page Redirects */
 function ajaxRedirect(event) {
