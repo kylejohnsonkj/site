@@ -477,16 +477,6 @@ input, select, textarea, button {
     color: white;
 }
 
-#dark_switch {
-    position: absolute;
-    left: 1em;
-    cursor: pointer;
-}
-
-#dark_switch:not([src]) {
-    visibility: hidden;
-}​
-
 
 /* Extra Space Below Footer */
 
@@ -514,6 +504,19 @@ input, select, textarea, button {
 #videoContainer embed {
     width: 192%;
     height: 331px;
+}
+
+
+/* Dark Mode */
+
+#dark_switch {
+    position: absolute;
+    left: 1em;
+    cursor: pointer;
+}
+
+#dark_switch:not([src]) {
+    visibility: hidden;
 }
 
 
