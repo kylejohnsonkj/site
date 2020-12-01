@@ -48,9 +48,7 @@ $(document).ready(function() {
 
     // adaptive dark mode
     toggleDarkMode();
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        toggleDarkMode();
-    });
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(toggleDarkMode);
 
     // manual dark mode override
     $("#dark_switch").click(function() {
