@@ -1,215 +1,228 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>kylejohnson | my apps</title>
-        
-        <link rel="stylesheet" type="text/css" href="kjapps.css">
-        <link rel="stylesheet" type="text/css" href="darkmode.css" id="darkmode">
-        
-        <meta name="viewport" content="width=device-width">
-        <meta name="keywords" content="kyle,johnson,kylejohnson,about,apps,resume,interests,contact">
-        <meta name="description" content="My name is Kyle Johnson and welcome to my website.">
-        
-        <link rel="shortcut icon" href="favicon/favicon.ico">
-        <link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
-        <link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
-        <link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
-        <link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
-        <link rel="apple-touch-icon" href="favicon/favicon-57.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
-        <meta name="msapplication-TileColor" content="#FFFFFF">
-        <meta name="msapplication-TileImage" content="favicon/favicon-144.png">
-        <meta name="msapplication-config" content="favicon/browserconfig.xml">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="kjapps.js"></script>
-    </head>
-    
-    <body>
-	    
-        <!-- Disable transitions if JavaScript is disabled -->
-        <noscript>
+
+<head>
+    <title>kylejohnson | my apps</title>
+
+    <link rel="stylesheet" type="text/css" href="kjapps.css">
+    <link rel="stylesheet" type="text/css" href="darkmode.css" id="darkmode">
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="kyle,johnson,kylejohnson,about,apps,resume,interests,contact">
+    <meta name="description" content="My name is Kyle Johnson and welcome to my website.">
+
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+    <link rel="apple-touch-icon" href="favicon/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="favicon/favicon-144.png">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="kjapps.js"></script>
+</head>
+
+<body>
+
+    <!-- Disable transitions if JavaScript is disabled -->
+    <noscript>
     	    <style type="text/css">
                 #header, .content { visibility: visible; }
     	    </style>
         </noscript>
-	    
-        <div id="fullContainer">
-            <div id="container">
 
-                <!-- Navigation bar (split w/ logo on left, links on right) -->
-                <div class="topnav" id="navbar">
-                    <a href="/" id="logo">kylejohnson</a>
-                    <a href="javascript:void(0);" id="icon" onclick="responsiveNavBar()">&#9776;</a>
-                    <a href="contact">contact</a>
-                    <a href="interests">interests</a>
-                    <a href="resume">resume</a>
-                    <a href="apps" id="current">my apps</a>
-                    <a href="/">about me</a>
-                </div>
+    <div id="fullContainer">
+        <div id="container">
 
-                <!-- Header title above content -->
-                <div id="header">
-                    my apps
-                </div>
-
-                <!-- Area for page content -->
-                <div class="content" id="apps_content">
-
-                    Check out my apps! You can download them on the App Store or view them on GitHub. <br>
-                    <div id="small"><hr id="grey_break"></div>
-
-                    <table cellpadding="10">
-                        <tr>
-                            <td id="icon"><img src="images/wwdc18.png" alt="WWDC" height="120" width="120"></td>
-                            <td class="appinfo">
-                                WWDC18 Submission<br>
-                                <div id="info">submitted 3/31/18</div>
-                                <div id="info">(Playgrounds)</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="space"></td>
-                            <td class="linkinfo"><a target='_blank' href="https://github.com/kylejohnsonkj/wwdc18">View on GitHub</a></td>
-                        </tr>
-                    </table>
-                    <table cellpadding="10" class="desc">
-                        <tr>
-                            <td>Pianist.playground is an interactive, colorful, song-packed piano. Play around and make some tunes! Need inspiration? Open the songs menu and select any bundled song to replay.</td>
-                        </tr>
-                    </table>
-                    <div id="small"><hr id="grey_break"></div>
-
-                    <table cellpadding="10">
-                        <tr>
-                            <td id="icon"><img src="images/chain_five.png" alt="Chain Five" height="120" width="120"></td>
-                            <td class="appinfo">
-                                Chain Five<br>
-                                <div id="info">released 1/21/18</div>
-                                <div id="info">(Games)</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="space"></td>
-                            <td class="linkinfo"><a target='_blank' href="https://itunes.apple.com/us/app/chain-five/id1325490441">View on App Store</a></td>
-                        </tr>
-                    </table>
-                    <table cellpadding="10" class="desc">
-                        <tr>
-                            <td>Chain Five brings a fresh take on a classic card and board game mashup! Win by getting 5 of your color in a row. Play against friends online, or if nobody is around, play locally by sharing your device with others.</td>
-                        </tr>
-                    </table>
-                    <div id="small"><hr id="grey_break"></div>
-                    
-                    <table cellpadding="10">
-                        <tr>
-                            <td id="icon"><img src="images/argallery.png" alt="WWDC" height="120" width="120"></td>
-                            <td class="appinfo">
-                                ARGallery<br>
-                                <div id="info">released 9/24/17</div>
-                                <div id="info">(Augmented Reality)</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="space"></td>
-                            <td class="linkinfo"><a target='_blank' href="https://github.com/kylejohnsonkj/ARGallery">View on GitHub</a></td>
-                        </tr>
-                    </table>
-                    <table cellpadding="10" class="desc">
-                        <tr>
-                            <td>Create your own art exhibition, powered by ARKit! One of the coolest things I experienced at WWDC was the introduction of native AR support, and this is a fun project I created with it. Written in Swift 4 for iPhone 6s and later.</td>
-                        </tr>
-                    </table>
-                    <div id="small"><hr id="grey_break"></div>
-
-                    <table cellpadding="10">
-                        <tr>
-                            <td id="icon"><img src="images/wwdc17.png" alt="WWDC" height="120" width="120"></td>
-                            <td class="appinfo">
-                                WWDC17 Submission<br>
-                                <div id="info">accepted 4/21/17</div>
-                                <div id="info">(Playgrounds)</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="space"></td>
-                            <td class="linkinfo"><a target='_blank' href="https://github.com/kylejohnsonkj/wwdc17">View on GitHub</a></td>
-                        </tr>
-                    </table>
-                    <table cellpadding="10" class="desc">
-                        <tr>
-                            <td>It's March Madness in a Swift Playground! Built using SpriteKit, this playground takes a fun approach on the classic arcade basketball shooter in just over 400 lines of code.</td>
-                        </tr>
-                    </table>
-                    <div id="small"><hr id="grey_break"></div>
-
-                    <table cellpadding="10">
-                        <tr>
-                            <td id="icon"><img src="images/redirect.png" alt="redirect" height="120" width="120"></td>
-                            <td class="appinfo">
-                                redirect<br>
-                                <div id="info">released 2/7/17</div>
-                                <div id="info">(Games)</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="space"></td>
-                            <td class="linkinfo"><a target='_blank' href="https://itunes.apple.com/us/app/redirect/id1202748337">View on App Store</a></td>
-                        </tr>
-                    </table>
-                    <table cellpadding="10" class="desc">
-                        <tr>
-                            <td>Redirect the ball into the target, but it's harder than you think... Collect coins to purchase paddles. Unlock achievements. Rise on the leaderboards. Can you make it to 100?</td>
-                        </tr>
-                    </table>
-                    <div id="small"><hr id="grey_break"></div>
-
-                    <table cellpadding="10">
-                        <tr>
-                            <td id="icon"><img src="images/shift_timer.png" alt="Shift Timer" height="120" width="120"></td>
-                            <td class="appinfo">
-                                Shift Timer<br>
-                                <div id="info">released 8/16/16</div>
-                                <div id="info">(Utilities)</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="space"></td>
-                            <td class="linkinfo"><a target='_blank' href="https://itunes.apple.com/us/app/shift-timer-track-your-job-progress-throughout-the-work-day/id1145055011">View on App Store</a></td>
-                        </tr>
-                    </table>
-                    <table cellpadding="10" class="desc">
-                        <tr>
-                            <td>Shift Timer allows you to enter your shift hours and get a live-updating view of your progress throughout the day. See what percentage of work you've completed and how many hours, minutes and seconds you have left to go.</td>
-                        </tr>
-                    </table>
-
-                </div>
-
-                <!-- Adds extra space under content div -->
-                <div id="extra"></div>
+            <!-- Navigation bar (split w/ logo on left, links on right) -->
+            <div class="topnav" id="navbar">
+                <a href="/" id="logo">kylejohnson</a>
+                <a href="javascript:void(0);" id="icon" onclick="responsiveNavBar()">&#9776;</a>
+                <a href="contact">contact</a>
+                <a href="interests">interests</a>
+                <a href="resume">resume</a>
+                <a href="apps" id="current">my apps</a>
+                <a href="/">about me</a>
             </div>
 
-            <!-- Site footer w/ copyright -->
-            <div id="footer">
-                <img id="dark_switch" height="20" width="20">
-                &#9400; #### Kyle Johnson Apps
+            <!-- Header title above content -->
+            <div id="header">
+                my apps
             </div>
 
+            <!-- Area for page content -->
+            <div class="content" id="apps_content">
+
+                Check out my apps! You can download them on the App Store or view them on GitHub. <br>
+                <div id="small">
+                    <hr id="grey_break">
+                </div>
+
+                <table cellpadding="10">
+                    <tr>
+                        <td id="icon"><img src="images/wwdc18.png" alt="WWDC" height="120" width="120"></td>
+                        <td class="appinfo">
+                            WWDC18 Submission<br>
+                            <div id="info">submitted 3/31/18</div>
+                            <div id="info">(Playgrounds)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="space"></td>
+                        <td class="linkinfo"><a target='_blank' href="https://github.com/kylejohnsonkj/wwdc18">View on GitHub</a></td>
+                    </tr>
+                </table>
+                <table cellpadding="10" class="desc">
+                    <tr>
+                        <td>Pianist.playground is an interactive, colorful, song-packed piano. Play around and make some tunes! Need inspiration? Open the songs menu and select any bundled song to replay.</td>
+                    </tr>
+                </table>
+                <div id="small">
+                    <hr id="grey_break">
+                </div>
+
+                <table cellpadding="10">
+                    <tr>
+                        <td id="icon"><img src="images/chain_five.png" alt="Chain Five" height="120" width="120"></td>
+                        <td class="appinfo">
+                            Chain Five<br>
+                            <div id="info">released 1/21/18</div>
+                            <div id="info">(Games)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="space"></td>
+                        <td class="linkinfo"><a target='_blank' href="https://itunes.apple.com/us/app/chain-five/id1325490441">View on App Store</a></td>
+                    </tr>
+                </table>
+                <table cellpadding="10" class="desc">
+                    <tr>
+                        <td>Chain Five brings a fresh take on a classic card and board game mashup! Win by getting 5 of your color in a row. Play against friends online, or if nobody is around, play locally by sharing your device with others.</td>
+                    </tr>
+                </table>
+                <div id="small">
+                    <hr id="grey_break">
+                </div>
+
+                <table cellpadding="10">
+                    <tr>
+                        <td id="icon"><img src="images/argallery.png" alt="WWDC" height="120" width="120"></td>
+                        <td class="appinfo">
+                            ARGallery<br>
+                            <div id="info">released 9/24/17</div>
+                            <div id="info">(Augmented Reality)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="space"></td>
+                        <td class="linkinfo"><a target='_blank' href="https://github.com/kylejohnsonkj/ARGallery">View on GitHub</a></td>
+                    </tr>
+                </table>
+                <table cellpadding="10" class="desc">
+                    <tr>
+                        <td>Create your own art exhibition, powered by ARKit! One of the coolest things I experienced at WWDC was the introduction of native AR support, and this is a fun project I created with it. Written in Swift 4 for iPhone 6s and later.</td>
+                    </tr>
+                </table>
+                <div id="small">
+                    <hr id="grey_break">
+                </div>
+
+                <table cellpadding="10">
+                    <tr>
+                        <td id="icon"><img src="images/wwdc17.png" alt="WWDC" height="120" width="120"></td>
+                        <td class="appinfo">
+                            WWDC17 Submission<br>
+                            <div id="info">accepted 4/21/17</div>
+                            <div id="info">(Playgrounds)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="space"></td>
+                        <td class="linkinfo"><a target='_blank' href="https://github.com/kylejohnsonkj/wwdc17">View on GitHub</a></td>
+                    </tr>
+                </table>
+                <table cellpadding="10" class="desc">
+                    <tr>
+                        <td>It's March Madness in a Swift Playground! Built using SpriteKit, this playground takes a fun approach on the classic arcade basketball shooter in just over 400 lines of code.</td>
+                    </tr>
+                </table>
+                <div id="small">
+                    <hr id="grey_break">
+                </div>
+
+                <table cellpadding="10">
+                    <tr>
+                        <td id="icon"><img src="images/redirect.png" alt="redirect" height="120" width="120"></td>
+                        <td class="appinfo">
+                            redirect<br>
+                            <div id="info">released 2/7/17</div>
+                            <div id="info">(Games)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="space"></td>
+                        <td class="linkinfo"><a target='_blank' href="https://itunes.apple.com/us/app/redirect/id1202748337">View on App Store</a></td>
+                    </tr>
+                </table>
+                <table cellpadding="10" class="desc">
+                    <tr>
+                        <td>Redirect the ball into the target, but it's harder than you think... Collect coins to purchase paddles. Unlock achievements. Rise on the leaderboards. Can you make it to 100?</td>
+                    </tr>
+                </table>
+                <div id="small">
+                    <hr id="grey_break">
+                </div>
+
+                <table cellpadding="10">
+                    <tr>
+                        <td id="icon"><img src="images/shift_timer.png" alt="Shift Timer" height="120" width="120"></td>
+                        <td class="appinfo">
+                            Shift Timer<br>
+                            <div id="info">released 8/16/16</div>
+                            <div id="info">(Utilities)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="space"></td>
+                        <td class="linkinfo"><a target='_blank' href="https://itunes.apple.com/us/app/shift-timer-track-your-job-progress-throughout-the-work-day/id1145055011">View on App Store</a></td>
+                    </tr>
+                </table>
+                <table cellpadding="10" class="desc">
+                    <tr>
+                        <td>Shift Timer allows you to enter your shift hours and get a live-updating view of your progress throughout the day. See what percentage of work you've completed and how many hours, minutes and seconds you have left to go.</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <!-- Adds extra space under content div -->
+            <div id="extra"></div>
         </div>
-        
-        <div id="videoContainer">
+
+        <!-- Site footer w/ copyright -->
+        <div id="footer">
+            <img id="dark_switch" height="20" width="20"> &#9400; #### Kyle Johnson Apps
         </div>
-        
-    </body>
+
+    </div>
+
+    <div id="videoContainer">
+    </div>
+
+</body>
+
 </html>

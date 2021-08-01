@@ -1,53 +1,72 @@
 body {
     background-color: #222;
 }
+
 .topnav {
     background-color: rgb(24, 26, 27);
 }
+
 .topnav #logo {
     color: white;
 }
+
 .topnav a {
     color: white;
 }
+
 .topnav a:hover {
     background-color: rgb(34, 36, 38);
 }
+
 #header {
     background-color: rgb(24, 26, 27);
     color: rgb(232, 230, 227);
 }
+
 .content:not(#resume_content) {
     background-color: rgba(24, 26, 27, 0.6);
     color: rgb(220, 220, 220);
 }
-#about_content img, .interests_item#squareimg {
+
+#about_content img,
+.interests_item#squareimg {
     background: #444;
 }
-#about_content a#alt_link, em {
+
+#about_content a#alt_link,
+em {
     color: rgb(152, 143, 129);
 }
+
 .interests_item {
     background: rgb(24, 26, 27);
 }
+
 .linkinfo a {
     background-color: rgb(24, 26, 27);
 }
+
 #github {
     content: url("images/github_dark.png")
 }
+
 #footer {
     background-color: rgb(24, 26, 27);
 }
-input, textarea, #contact_content select {
+
+input,
+textarea,
+#contact_content select {
     background-color: #181a1b;
     color: rgb(220, 220, 220);
 }
+
 #contact_content input[type="submit"] {
     filter: brightness(0.9);
 }
 
-@media only screen and (max-device-width: 820px), only screen and (max-width: 820px) { 
+@media only screen and (max-device-width: 820px),
+only screen and (max-width: 820px) {
     body {
         background-color: #333;
     }
