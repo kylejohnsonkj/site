@@ -28,17 +28,17 @@ $(document).ready(function() {
         var flags = "?autoplay=1&iv_load_policy=3";
         var newLink = embeddedLink.concat(flags);
 
-        if ($("#fullContainer").css('opacity') == 1) {
-            $("#fullContainer").animate({ opacity: 0.3 }, 1000);
+        if ($("#page").css('opacity') == 1) {
+            $("#page").animate({ opacity: 0.3 }, 1000);
             $("#videoContainer").html("<iframe allowfullscreen=\"allowfullscreen\" style=\"border: 3px solid #EEE;\" src=\"" + newLink + "\"></iframe>");
             $("#videoContainer").css("display", "inline");
         }
     });
 
     /* Hide Embedded YouTube Video */
-    $("#fullContainer").click(function() {
-        if ($("#fullContainer").css('opacity') != 1) {
-            $("#fullContainer").animate({ opacity: 1 }, 1000);
+    $("#page").click(function() {
+        if ($("#page").css('opacity') != 1) {
+            $("#page").animate({ opacity: 1 }, 1000);
             $("#videoContainer").html("");
             $("#videoContainer").css("display", "none");
         }
