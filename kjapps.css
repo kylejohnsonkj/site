@@ -219,41 +219,89 @@ em {
 }
 
 
-/* My Apps */
+/* My Projects */
 
-#apps_content table {
-    table-layout: fixed;
+#projects_sidebar {
+    float: right;
+}
+
+.sidebar_item {
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: white;
+    padding: 7px;
+    margin-left: 24px;
+    margin-bottom: 12px;
+    align-content: center;
+}
+
+.sidebar_item#squareimg {
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: white;
+    padding: 7px;
+    margin-top: 5px;
+    margin-left: 24px;
+    margin-bottom: 12px;
+    align-content: center;
+    line-height: 0;
+}
+
+#projects_content h3 {
+    color: rgb(255, 145, 64);
+    font-weight: normal;
+    font-size: 23px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#projects_content h4 {
+    color: black;
+    font-size: 17px;
+    font-weight: normal;
+    color: rgb(81, 174, 255);
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#projects_content table {
     border-collapse: collapse;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: -5px;
+    margin-bottom: 10px;
 }
 
-#apps_content .desc {
-    width: 60%;
+#projects_content tr:hover {
+    background-color: #f5f5f5;
 }
 
-#apps_content .appinfo {
-    width: 200px;
+#projects_content tr#table_header {
+    background-color: rgba(150, 150, 150, 0.25);
 }
 
-#apps_content #space {
-    width: 0%;
-}
-
-#apps_content #info {
-    font-size: 12px;
-}
-
-#apps_content a {
+#projects_content a {
     color: rgb(81, 174, 255);
     text-decoration: none;
-    float: left;
-    margin-top: -15px;
-    margin-left: -5px;
 }
 
-#apps_content a:hover {
+#projects_content a#alt {
+    color: rgb(255, 145, 64);
+    text-decoration: none;
+}
+
+#projects_content a#alt_link {
+    color: grey;
+    text-decoration: none;
+}
+
+#projects_content a:hover {
+    text-decoration: underline;
+}
+
+#projects_content a#alt:hover {
+    text-decoration: underline;
+}
+
+#projects_content a#alt_link:hover {
     text-decoration: underline;
 }
 
@@ -293,7 +341,7 @@ em {
     float: right;
 }
 
-.interests_item {
+.sidebar_item {
     border-radius: 6px;
     -moz-border-radius: 6px;
     background: white;
@@ -303,7 +351,7 @@ em {
     align-content: center;
 }
 
-.interests_item#squareimg {
+.sidebar_item#squareimg {
     border-radius: 6px;
     -moz-border-radius: 6px;
     background: white;
@@ -319,15 +367,6 @@ em {
     color: rgb(255, 145, 64);
     font-weight: normal;
     font-size: 23px;
-    padding: 0px;
-    margin: 0px;
-}
-
-#interests_content h4 {
-    color: black;
-    font-size: 17px;
-    font-weight: normal;
-    color: rgb(81, 174, 255);
     padding: 0px;
     margin: 0px;
     margin-bottom: 10px;
@@ -515,8 +554,8 @@ button {
 
 /* Mobile Layout */
 
-@media only screen and (max-device-width: 820px),
-only screen and (max-width: 820px) {
+@media only screen and (max-device-width: 830px),
+only screen and (max-width: 830px) {
     body {
         background-size: 0 0;
         background-color: lightgray;
@@ -589,12 +628,13 @@ only screen and (max-width: 820px) {
         margin-left: 16px;
         top: -42px;
     }
+    #projects_sidebar,
     #interests_sidebar {
         float: right;
         width: 100%;
         margin-left: 15px;
     }
-    .interests_item {
+    .sidebar_item {
         border-radius: 6px;
         -moz-border-radius: 6px;
         background: white;
@@ -604,7 +644,7 @@ only screen and (max-width: 820px) {
         align-content: center;
         width: calc(100% - 14px);
     }
-    .interests_item#squareimg {
+    .sidebar_item#squareimg {
         border-radius: 6px;
         -moz-border-radius: 6px;
         background: white;

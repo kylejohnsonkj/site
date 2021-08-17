@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>kylejohnson | projects</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="kyle,johnson,kylejohnson,about,apps,projects,resume,interests,contact">
+    <meta name="description" content="My name is Kyle Johnson and welcome to my website.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <link rel="stylesheet" type="text/css" href="kjapps.css">
+    <link rel="stylesheet" type="text/css" href="darkmode.css" id="darkmode">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="kjapps.js"></script>
+</head>
+
+<body>
+    <noscript>
+        <style type="text/css">
+            #header, .content { visibility: visible; }
+        </style>
+    </noscript>
+
+    <div id="page">
+        <div id="container">
+            <div class="topnav" id="navbar">
+                <a href="/" id="logo">kylejohnson</a>
+                <a href="javascript:void(0);" id="icon" onclick="responsiveNavBar()">&#9776;</a>
+                <a href="contact">contact</a>
+                <a href="resume">resume</a>
+                <a href="interests">interests</a>
+                <a href="projects" id="current">projects</a>
+                <a href="/">about me</a>
+            </div>
+
+            <div id="header">projects</div>
+
+            <div class="content" id="projects_content">
+                A list of my favorite personal projects I've worked on to date.
+                <div id="small">
+                    <hr id="grey_break">
+                </div>
+
+                <div id="projects_sidebar">
+                    <div class="sidebar_item">
+                        <a href="https://imgur.com/a/AjrOa5e" id="alt" target="_blank"><img src="images/matrix.jpg" alt="rgb matrix showing artwork" height="180" width="240"><br>Live artwork!</a>
+                    </div>
+                </div>
+                <h3>ft-artwork</h3>
+                <h4><a href="https://github.com/kylejohnsonkj/ft-artwork" id="alt_link" target="_blank">(View on GitHub)</a></h4>
+                <h4>View now playing album artwork on an rgb led matrix</h4>
+                While thinking of fun uses for a raspberry pi/matrix combination, I wrote a powershell script and hook for the monstercat visualizer rainmeter skin to send my now playing album artwork over to the pi for display. The matrix can show anything on it, from
+                images to sports scoreboards to YouTube videos. Overall it was a really fun project and was well-received by the raspberry pi community.
+                <div id="small">
+                    <hr id="grey_break">
+                </div>
+
+                <div id="projects_sidebar">
+                    <div class="sidebar_item">
+                        <a href="images/survivor.png" id="alt" target="_blank"><img src="images/survivor.png" alt="sample confessional image" height="135" width="240"><br>Sample confessional</a>
+                    </div>
+                </div>
+                <h3>Survivor Confessional Creator</h3>
+                <h4><a href="https://github.com/kylejohnsonkj/survivor" id="alt_link" target="_blank">(View on GitHub)</a></h4>
+                <h4>Create your own survivor confessional images</h4>
+                As an avid fan of the reality TV show Survivor, I always thought it would be fun to create my own confessional images. These interviews are a huge part of the show, and being able to recreate scenes sounded both fun and useful. After spending a while
+                getting the font and text placement just right, this project was completed. <a href="https://kylejohnsonkj.github.io/survivor" id="alt_link" target="_blank">Give it a try!</a>
+                <div id="small">
+                    <hr id="grey_break">
+                </div>
+
+                <div id="projects_sidebar">
+                    <div class="sidebar_item">
+                        <a href="images/phases.png" id="alt" target="_blank"><img src="images/phases.png" alt="screenshot of phases" height="190" width="240"><br>Screenshot</a>
+                    </div>
+                </div>
+                <h3>Reddit Phases</h3>
+                <h4><a href="https://github.com/kylejohnsonkj/Phases" id="alt_link" target="_blank">(View on GitHub)</a></h4>
+                <h4>View your reddit comment history by phases of subreddit activity</h4>
+                Over time, I've subtubly noticed my interests change between all sorts of activities. Programming, outdoor board sports, budget audio... you name it. I thought it'd be really interesting to visualize these phases in my life as they appear on reddit, so
+                I created a Swift playground that does just that.<br><br>It uses the reddit api to fetch comments recursively, and parses the json into Codable objects for filtering and graphing.
+                <div id="small">
+                    <hr id="grey_break">
+                </div>
+
+                <div id="projects_sidebar">
+                    <div class="sidebar_item">
+                        <a href="images/chain_five.png" id="alt" target="_blank"><img src="images/chain_five.png" alt="chain five preview" height="206" width="240"><br>Chain Five Preview</a>
+                    </div>
+                </div>
+                <h3>Chain Five</h3>
+                <h4><a href="https://github.com/kylejohnsonkj/Chain-Five" id="alt_link" target="_blank">(View on GitHub)</a></h4>
+                <h4>Multiplayer card and board game. Written in Swift!</h4>
+                Chain Five brings Sequence, the hit strategy board-and-card game, to iPhones and iPads worldwide. Though it is no longer available on the App Store, it had a friendly playerbase and was one of my first successful apps.<br><br>Chain Five
+                also introduced new features to the game such as potential move highlighting and a messaging system.
+                <div id="small">
+                    <hr id="grey_break">
+                </div>
+
+                <div id="projects_sidebar">
+                    <div class="sidebar_item">
+                        <a href="images/screenshot.png" id="alt" target="_blank"><img src="images/screenshot.png" alt="this website" height="152" width="240"><br>Since May 2017</a>
+                    </div>
+                </div>
+                <h3>Kyle Johnson Apps</h3>
+                <h4><a href="https://github.com/kylejohnsonkj/site" id="alt_link" target="_blank">(View on GitHub)</a></h4>
+                <h4>Kyle Johnson Apps, my personal website</h4>
+                This website began as the final project for my college web development class back in 2017. Since then, I have kept it up to date with my latest projects, reshaped it, and added new features such as dark mode support.<br><br>Thanks for
+                stopping by!
+            </div>
+
+            <div id="gap"></div>
+        </div>
+
+        <div id="footer">
+            <img id="dark_switch" height="20" width="20"> &#9400; #### Kyle Johnson Apps
+        </div>
+    </div>
+
+    <div id="videoContainer"></div>
+</body>
+
+</html>

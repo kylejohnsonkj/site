@@ -4,7 +4,7 @@
 <head>
     <title>kylejohnson | contact</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content="kyle,johnson,kylejohnson,about,apps,resume,interests,contact">
+    <meta name="keywords" content="kyle,johnson,kylejohnson,about,apps,projects,resume,interests,contact">
     <meta name="description" content="My name is Kyle Johnson and welcome to my website.">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -31,34 +31,26 @@
                 <a href="/" id="logo">kylejohnson</a>
                 <a href="javascript:void(0);" id="icon" onclick="responsiveNavBar()">&#9776;</a>
                 <a href="contact" id="current">contact</a>
-                <a href="interests">interests</a>
                 <a href="resume">resume</a>
-                <a href="apps">my apps</a>
+                <a href="interests">interests</a>
+                <a href="projects">projects</a>
                 <a href="/">about me</a>
             </div>
 
             <div id="header">contact</div>
 
             <div class="content" id="contact_content">
-                Have feedback, questions, or just want to say hi? Contact me here.<br>
+                Want to say hi? Use the form below. Messages go directly to my inbox.<br>
                 <br>
                 <div id="thankyou_message">Your message has been delivered.</div>
                 <div id="honeypot_message">Your message has been blocked. Sorry, robot!</div>
 
                 <form id="gform" method="post" onsubmit="return submitForm()">
-                    <input required type="text" name="name" placeholder="your name" id="name"><br>
+                    <input required type="text" name="name" placeholder="Full Name" id="name"><br>
                     <br>
-                    <input required type="email" name="email" placeholder="email" id="email"><br>
+                    <input required type="email" name="email" placeholder="Email Address" id="email"><br>
                     <br>
-                    <select required type="app" name="app" id="app">
-                        <option value="">choose related app...</option>
-                        <option value="Chain Five">Chain Five</option>
-                        <option value="redirect">redirect</option>
-                        <option value="Shift Timer">Shift Timer</option>
-                        <option value="nil">(not app related)</option>
-                    </select>
-                    <br>
-                    <textarea required name="message" placeholder="message here" rows="4" cols="50" id="message"></textarea><br>
+                    <textarea required name="message" placeholder="Your Message Here..." rows="4" cols="50" id="message"></textarea><br>
                     <input type="text" id="honeypot" name="honeypot" value="robot" style="display:none">
                     <input type="submit" value="Send">
                 </form>

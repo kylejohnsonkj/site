@@ -29,7 +29,7 @@ body {
 }
 
 #about_content img,
-.interests_item#squareimg {
+.sidebar_item#squareimg {
     background: #444;
 }
 
@@ -38,7 +38,7 @@ em {
     color: rgb(152, 143, 129);
 }
 
-.interests_item {
+.sidebar_item {
     background: rgb(24, 26, 27);
 }
 
