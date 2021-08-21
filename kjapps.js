@@ -54,11 +54,16 @@ $(document).ready(function() {
     $("#dark_switch").click(function() {
         document.getElementById("darkmode").disabled = !document.getElementById("darkmode").disabled
         $("#dark_switch").attr("src", document.getElementById("darkmode").disabled ? "images/moon.png" : "images/sun.png")
+        sessionStorage.setItem("dark", !document.getElementById("darkmode").disabled)
     });
 })
 
 function isDarkModeEnabled() {
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    if (sessionStorage.getItem("dark") === null) {
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    } else {
+        return sessionStorage.getItem("dark") === "true"
+    }
 }
 
 function toggleDarkMode() {
