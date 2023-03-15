@@ -326,9 +326,10 @@ em {
 }
 
 #resume_content img {
-    width: calc(100% + 40px);
+    width: calc(100% + 20px);
     margin: -20px;
-    margin-bottom: -45px;
+    margin-bottom: -25px;
+    padding: 10px;
 }
 
 #resume_download img {
