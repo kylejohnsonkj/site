@@ -539,10 +539,6 @@ button {
 
 @media only screen and (max-device-width: 830px),
 only screen and (max-width: 830px) {
-    body {
-        background-size: 0 0;
-        background-color: lightgray;
-    }
     .topnav a:not(:first-child) {
         display: none;
     }
