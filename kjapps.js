@@ -53,7 +53,7 @@ $(document).ready(function() {
     // manual dark mode override
     $("#dark_switch").click(function() {
         document.getElementById("darkmode").disabled = !document.getElementById("darkmode").disabled
-        $("#dark_switch").attr("src", document.getElementById("darkmode").disabled ? "images/moon.png" : "images/sun.png")
+        $("#dark_switch").attr("src", document.getElementById("darkmode").disabled ? "images/sun.png" : "images/moon.png")
         sessionStorage.setItem("dark", !document.getElementById("darkmode").disabled)
     });
 })
@@ -69,7 +69,7 @@ function isDarkModeEnabled() {
 function toggleDarkMode() {
     document.getElementById("darkmode").disabled = !isDarkModeEnabled();
     $("#dark_switch").prop("checked", isDarkModeEnabled());
-    $("#dark_switch").attr("src", isDarkModeEnabled() ? "images/sun.png" : "images/moon.png")
+    $("#dark_switch").attr("src", isDarkModeEnabled() ? "images/moon.png" : "images/sun.png")
 }
 
 /* Fancy Page Redirects */
