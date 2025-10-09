@@ -266,6 +266,11 @@ em {
     color: rgb(81, 174, 255);
     padding: 0px;
     margin: 0px;
+}
+
+#projects_content h4 a {
+    display: inline-block;
+    margin-top: 2px;
     margin-bottom: 10px;
 }
 
